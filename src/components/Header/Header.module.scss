@@ -1,0 +1,122 @@
+.header {
+  display: inline-flex;
+  flex-direction: column;
+  width: 306px;
+  height: 100vh;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 37px;
+  padding-bottom: 76px;
+  background: #fff;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+
+  &__user-info {
+    margin-top: auto;
+    display: flex;
+  }
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 38px;
+
+  &__wrap {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__icon {
+    width: 37px;
+    height: 37px;
+    margin-right: 8px;
+    fill: var(--logo-icon-color);
+  }
+
+  &__title {
+    color: #000;
+    font-size: 26px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    margin-right: 4px;
+  }
+
+  &__version {
+    color: #838383;
+    font-size: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.1px;
+  }
+}
+
+.navigation {
+  &__item {
+    a {
+      display: flex;
+      align-items: center;
+      padding: 11px 8px 11px 11px;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      fill: var(--icon-color);
+      color: var(--nav-text-color);
+
+      &:active,
+      &:hover {
+        transition: background-color, color 200ms ease-in-out;
+        fill: var(--active-background);
+        color: var(--active-background);
+      }
+
+      &.active {
+        transition: all 200ms ease-in-out;
+
+        background-color: var(--active-background);
+        fill: var(--active-icon-color);
+        color: var(--active-text-color);
+      }
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+  }
+
+  &__icon-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.user-info {
+  &__photo {
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+
+  &__login {
+    color: var(--title-text-color);
+    display: block;
+  }
+
+  &__role {
+    display: block;
+    color: var(--text-role-color);
+    font-size: 12px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+  }
+}
